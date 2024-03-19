@@ -20,4 +20,22 @@
             <Button Text="Start" x:Name="StartTimer" Clicked="StartTimer_Clicked"/>
         </StackLayout>
     </ContentPage>
+    <ContentPage Title="Stoper">
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <FlexLayout JustifyContent="SpaceBetween" Direction="Column" HeightRequest="150" HorizontalOptions="Center" WidthRequest="100">
+                <Label Text="Stoper" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                <Label Text="00:00:00" x:Name="StoperTime" HorizontalTextAlignment="Center"/>
+                <Button Text="Start" x:Name="ButtonAction" Clicked="ButtonAction_Clicked"/>
+                <!--<Button Text="Pomiar" x:Name="TimeStampTimer" Clicked="TimeStampTimer_Clicked"/>-->
+                <Button Text="Reset" x:Name="Reset" Clicked="Reset_Clicked"/>
+            </FlexLayout>
+            <ListView x:Name="Times">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding .}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
 </TabbedPage>

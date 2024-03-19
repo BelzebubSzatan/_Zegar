@@ -11,7 +11,7 @@ namespace _Zegar.FileManager
         private static readonly string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "xDDD3.txt");
         public static void SaveToFile(string element)
         {
-            StreamWriter sw = new StreamWriter(path);
+            StreamWriter sw = new StreamWriter(path,true);
             sw.WriteLine(element);
             sw.Close();
         }
