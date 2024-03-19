@@ -1,4 +1,5 @@
 ﻿using _Zegar.FileManager;
+using _Zegar.Pages;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +10,7 @@ using Xamarin.Forms;
 
 namespace _Zegar
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : TabbedPage
     {
         public MainPage()
         {
@@ -31,7 +32,12 @@ namespace _Zegar
             FileHandling.SaveToFile(DateTime.Now.ToString("HH:mm:ss"));
         }
 
-        private void Show_Clicked(object sender, EventArgs e)
+        private async void Show_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ClockList());
+        }
+
+        private void StartTimer_Clicked(object sender, EventArgs e)
         {
 
         }

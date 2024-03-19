@@ -15,15 +15,16 @@ namespace _Zegar.FileManager
             sw.WriteLine(element);
             sw.Close();
         }
-        public static void ReadFromFile(ref List<string> elementsList)
+        public static List<string> ReadFromFile()
         {
-            elementsList.Clear();
-            if (!File.Exists(path)) return;
+            List<string> elementsList= new List<string>();
+            if (!File.Exists(path)) return new List<string>();
             List<string> lines = File.ReadAllLines(path).ToList();
             foreach (string line in lines)
             {
                 elementsList.Add(line);
             }
+            return elementsList;
         }
     }
 }

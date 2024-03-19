@@ -1,14 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="_Zegar.MainPage">
-
-    <StackLayout VerticalOptions="Center" WidthRequest="100">
-        <FlexLayout Direction="Column" JustifyContent="SpaceBetween" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center">
-            <Label Text="01:01:01" FontSize="20"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="Timer"/>
-            <Button Text="Zapisz" x:Name="Save" Clicked="Save_Clicked"/>
-            <Button Text="Pokaz zapisane" x:Name="Show" Clicked="Show_Clicked"/>
-        </FlexLayout>
-    </StackLayout>
-
-</ContentPage>
+             x:Class="_Zegar.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage Title="Zegar">
+        <StackLayout VerticalOptions="Center" WidthRequest="100">
+            <FlexLayout Direction="Column" JustifyContent="SpaceBetween" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center">
+                <Label Text="01:01:01" FontSize="20"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="Timer"/>
+                <Button Text="Zapisz" x:Name="Save" Clicked="Save_Clicked"/>
+                <Button Text="Pokaz zapisane" x:Name="Show" Clicked="Show_Clicked"/>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Alarm">
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Ustaw Czas"/>
+            <Entry x:Name="AlarmTime" Placeholder="Podaj czas w minutach"/>
+            <Label x:Name="TimeLeft" Text="00:00:00" TextColor="Black" HorizontalTextAlignment="Center"/>
+            <Button Text="Start" x:Name="StartTimer" Clicked="StartTimer_Clicked"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
