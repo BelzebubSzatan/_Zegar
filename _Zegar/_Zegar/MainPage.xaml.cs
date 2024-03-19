@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _Zegar.FileManager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace _Zegar
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     DateTime now=DateTime.Now;
-                    Timer.Text = $"{now.Hour}:{now.Minute}:{now.Second}";
+                    Timer.Text = now.ToString("HH:mm:ss");
                 });
 
                 return true;
@@ -27,7 +28,7 @@ namespace _Zegar
         }
         private void Save_Clicked(object sender, EventArgs e)
         {
-
+            FileHandling.SaveToFile(DateTime.Now.ToString("HH:mm:ss"));
         }
 
         private void Show_Clicked(object sender, EventArgs e)
