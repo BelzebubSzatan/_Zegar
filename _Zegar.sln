@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Zegar.Android", "_Zegar\_Zegar.Android\_Zegar.Android.csproj", "{58EE642D-4212-4974-A258-7F6A2B1B149F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Zegar", "_Zegar\_Zegar\_Zegar.csproj", "{9EAE3275-4A30-474A-9D6E-EA772CC9C90B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58EE642D-4212-4974-A258-7F6A2B1B149F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58EE642D-4212-4974-A258-7F6A2B1B149F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58EE642D-4212-4974-A258-7F6A2B1B149F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{58EE642D-4212-4974-A258-7F6A2B1B149F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58EE642D-4212-4974-A258-7F6A2B1B149F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58EE642D-4212-4974-A258-7F6A2B1B149F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9EAE3275-4A30-474A-9D6E-EA772CC9C90B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAE3275-4A30-474A-9D6E-EA772CC9C90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAE3275-4A30-474A-9D6E-EA772CC9C90B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9EAE3275-4A30-474A-9D6E-EA772CC9C90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAE3275-4A30-474A-9D6E-EA772CC9C90B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EAE3275-4A30-474A-9D6E-EA772CC9C90B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FECC0231-3577-4AF5-BA5F-B2824C65FBE9}
+	EndGlobalSection
+EndGlobal
