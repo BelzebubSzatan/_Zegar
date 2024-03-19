@@ -14,5 +14,15 @@ namespace _Zegar
         {
             InitializeComponent();
         }
+
+        private void Save_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Show_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
