@@ -13,8 +13,18 @@ namespace _Zegar
         public MainPage()
         {
             InitializeComponent();
-        }
+            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+            {
 
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    DateTime now=DateTime.Now;
+                    Timer.Text = $"{now.Hour}:{now.Minute}:{now.Second}";
+                });
+
+                return true;
+            });
+        }
         private void Save_Clicked(object sender, EventArgs e)
         {
 

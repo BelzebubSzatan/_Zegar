@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="_Zegar.MainPage">
 
-    <StackLayout>
-        <FlexLayout Direction="Column" JustifyContent="SpaceBetween" HeightRequest="100">
-            <Label Text="01:01:01"/>
+    <StackLayout VerticalOptions="Center" WidthRequest="100">
+        <FlexLayout Direction="Column" JustifyContent="SpaceBetween" HeightRequest="150" WidthRequest="150" HorizontalOptions="Center">
+            <Label Text="01:01:01" FontSize="20"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="Timer"/>
             <Button Text="Zapisz" x:Name="Save" Clicked="Save_Clicked"/>
             <Button Text="Pokaz zapisane" x:Name="Show" Clicked="Show_Clicked"/>
         </FlexLayout>
